@@ -36,6 +36,11 @@ namespace Electrics
         public GameObject PlasmaBot_Actions_Panel;
         public GameObject WaterBot_Actions_Panel;
 
+        public GameObject Item_Menu_1;
+        public GameObject Item_Menu_2;
+        public GameObject Item_Menu_3;
+
+
         public int Attack_Power_Bot_1 = 0;
         public int Attack_Power_Bot_2 = 0;
 
@@ -358,7 +363,7 @@ namespace Electrics
 
             arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
             arena.Attack = true;
-            EarthBot_Actions_Panel.SetActive(false);
+            FireBot_Actions_Panel.SetActive(false);
         }
 
         public void Fire_Guard()
@@ -376,7 +381,7 @@ namespace Electrics
             //block 1-3
             int Guard = Random.Range(1, 3);
             arena.Attack = true;
-            EarthBot_Actions_Panel.SetActive(false);
+            FireBot_Actions_Panel.SetActive(false);
         }
 
 
@@ -592,6 +597,35 @@ namespace Electrics
             int Heal = Random.Range(4, 5);
             arena.Attack = true;
             PlasmaBot_Actions_Panel.SetActive(false);
+        }
+
+        //Choose_Item_Menu Buttons
+        public void Choose_Item_Menu_1()
+        {
+            Item_Menu_1.SetActive(true);
+            Item_Menu_2.SetActive(false);
+            Item_Menu_3.SetActive(false);
+        }
+
+        public void Choose_Item_Menu_2()
+        {
+            Item_Menu_1.SetActive(false);
+            Item_Menu_2.SetActive(true);
+            Item_Menu_3.SetActive(false);
+        }
+
+        public void Choose_Item_Menu_3()
+        {
+            Item_Menu_1.SetActive(false);
+            Item_Menu_2.SetActive(false);
+            Item_Menu_3.SetActive(true);
+        }
+
+        public void Main_Menu()
+        {
+            Item_Menu_1.SetActive(false);
+            Item_Menu_2.SetActive(false);
+            Item_Menu_3.SetActive(false);
         }
     }
 }
