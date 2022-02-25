@@ -10,7 +10,7 @@ public class Outside : MonoBehaviour
     {
         if (col.gameObject.name == "Player") 
         {
-            SceneManager.LoadScene("SampleScene");
+            SceneManager.LoadScene("SafeArea01");
         }
     }
 }
