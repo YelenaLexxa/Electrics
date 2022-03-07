@@ -52,6 +52,17 @@ namespace Electrics
             SetUpAttack();
             Enemy_Slider_1.value = health_Enemy_1;
             Enemy_Slider_2.value = health_Enemy_2;
+
+            if (health_Enemy_1 <= 0)
+            {
+                Enemy_1.interactable = false;
+            }
+
+            if (health_Enemy_2 <= 0)
+            {
+                Enemy_2.interactable = false;
+            }
+
         }
 
         public int Attack_Enemy(int index)

@@ -45,11 +45,13 @@ namespace Electrics
                 if (fight.currentEnemyIndex == 1)
                 {
                     playerFight.health_bot_1 = playerFight.health_bot_1 - fight.Total_Attack_Power_Enemy_1;
+                    playerFight.Current_HP_Bots[playerFight.currentBot_1] = playerFight.health_bot_1;
                 }
 
                 if (fight.currentEnemyIndex == 2)
                 {
                     playerFight.health_bot_1 = playerFight.health_bot_1 - fight.Total_Attack_Power_Enemy_2;
+                    playerFight.Current_HP_Bots[playerFight.currentBot_1] = playerFight.health_bot_1;
                 }
             }
 
@@ -58,11 +60,13 @@ namespace Electrics
                 if (fight.currentEnemyIndex == 1)
                 {
                     playerFight.health_bot_2 = playerFight.health_bot_2 - fight.Total_Attack_Power_Enemy_1;
+                    playerFight.Current_HP_Bots[playerFight.currentBot_2] = playerFight.health_bot_2;
                 }
 
                 if (fight.currentEnemyIndex == 2)
                 {
                     playerFight.health_bot_2 = playerFight.health_bot_2 - fight.Total_Attack_Power_Enemy_2;
+                    playerFight.Current_HP_Bots[playerFight.currentBot_2] = playerFight.health_bot_2;
                 }
             }
         }
@@ -95,8 +99,9 @@ namespace Electrics
                     fight.health_Enemy_2 = fight.health_Enemy_2 - playerFight.Total_Attack_Power_Bot_2;
                 }
             }
-
+            playerFight.Round_Int = playerFight.Round_Int + 1; 
             ButtlePoints = ButtlePoints + 7;
+            playerFight.AdditionalAttack = 0;
         }
     }
 }
