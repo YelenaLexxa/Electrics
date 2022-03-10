@@ -1589,6 +1589,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751876713956258}
+  - component: {fileID: 7484751876714323843}
   m_Layer: 0
   m_Name: cabinet_1
   m_TagString: Untagged
@@ -1596,6 +1597,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751876714323843
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751876714323842}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 0.8, z: 2}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!1 &7484751876714323844
 GameObject:
   m_ObjectHideFlags: 0
@@ -3655,6 +3669,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877296450730}
+  - component: {fileID: 7484751877296812171}
   m_Layer: 0
   m_Name: chair_2
   m_TagString: Untagged
@@ -3662,6 +3677,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877296812171
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877296812170}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 1.2}
+  m_Center: {x: 0, y: 0, z: 0.6}
 --- !u!1 &7484751877296812172
 GameObject:
   m_ObjectHideFlags: 0
@@ -6988,6 +7016,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877681487453}
+  - component: {fileID: 7484751877681382014}
   m_Layer: 0
   m_Name: table_2
   m_TagString: Untagged
@@ -6995,6 +7024,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877681382014
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877681382013}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.9, z: 3.5}
+  m_Center: {x: 0, y: 0, z: -1}
 --- !u!4 &7484751877681487449
 Transform:
   m_ObjectHideFlags: 0
@@ -8628,6 +8670,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877878136548}
+  - component: {fileID: 7484751877877965509}
   m_Layer: 0
   m_Name: sofa_1
   m_TagString: Untagged
@@ -8635,6 +8678,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877877965509
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877877965508}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.7, y: 0.8, z: 1}
+  m_Center: {x: 0, y: 0, z: 0.5}
 --- !u!1 &7484751877877965510
 GameObject:
   m_ObjectHideFlags: 0
@@ -12870,6 +12926,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878427681182}
+  - component: {fileID: 7484751878427327935}
   m_Layer: 0
   m_Name: bed_1
   m_TagString: Untagged
@@ -12877,6 +12934,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878427327935
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878427327934}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2, y: 2.3, z: 2}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!4 &7484751878427681168
 Transform:
   m_ObjectHideFlags: 0
@@ -14137,6 +14207,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878625970083}
+  - component: {fileID: 7484751878626466692}
   m_Layer: 0
   m_Name: torchere_1
   m_TagString: Untagged
@@ -14144,6 +14215,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878626466692
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878626466691}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 2}
+  m_Center: {x: 0, y: 0, z: 1}
 --- !u!1 &7484751878626466693
 GameObject:
   m_ObjectHideFlags: 0
