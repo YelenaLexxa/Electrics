@@ -979,6 +979,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751876672935658}
+  - component: {fileID: 7484751876672506571}
   m_Layer: 0
   m_Name: torchere_4
   m_TagString: Untagged
@@ -986,6 +987,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751876672506571
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751876672506570}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.6, z: 3.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751876672506572
 GameObject:
   m_ObjectHideFlags: 0
@@ -2238,6 +2252,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751876818253553}
+  - component: {fileID: 7484751876818676434}
   m_Layer: 0
   m_Name: chair_4 (1)
   m_TagString: Untagged
@@ -2245,6 +2260,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751876818676434
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751876818676433}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751876818676435
 GameObject:
   m_ObjectHideFlags: 0
@@ -2557,6 +2585,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751876885588553}
+  - component: {fileID: 7484751876885558890}
   m_Layer: 0
   m_Name: coffee_table_1
   m_TagString: Untagged
@@ -2564,6 +2593,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751876885558890
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751876885558889}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 0.6, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751876885558893
 GameObject:
   m_ObjectHideFlags: 0
@@ -2669,6 +2711,7 @@ GameObject:
   - component: {fileID: 7484751876941557057}
   - component: {fileID: 7484751876944981345}
   - component: {fileID: 7484751876943982497}
+  - component: {fileID: 7484751876941787490}
   m_Layer: 0
   m_Name: plate (1)
   m_TagString: Untagged
@@ -2676,6 +2719,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751876941787490
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751876941787489}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24.232925, y: 24.232931, z: 5.933241}
+  m_Center: {x: 0, y: 0.00012207031, z: 0.0000166893}
 --- !u!23 &7484751876943982497
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2778,6 +2834,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751876992360473}
+  - component: {fileID: 7484751876992728122}
   m_Layer: 0
   m_Name: kitchen_table_2
   m_TagString: Untagged
@@ -2785,6 +2842,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751876992728122
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751876992728121}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.7, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751876992728123
 GameObject:
   m_ObjectHideFlags: 0
@@ -3070,6 +3140,7 @@ GameObject:
   - component: {fileID: 7484751877118660590}
   - component: {fileID: 7484751877119987662}
   - component: {fileID: 7484751877121084686}
+  - component: {fileID: 7484751877119087567}
   m_Layer: 0
   m_Name: plate (2)
   m_TagString: Untagged
@@ -3077,6 +3148,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877119087567
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877119087566}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24.232925, y: 24.232931, z: 5.933241}
+  m_Center: {x: 0.000061035156, y: 0.00012207031, z: -0.000013828278}
 --- !u!33 &7484751877119987662
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -3415,6 +3499,7 @@ GameObject:
   - component: {fileID: 7484751877246310832}
   - component: {fileID: 7484751877242886544}
   - component: {fileID: 7484751877244017488}
+  - component: {fileID: 7484751877246272913}
   m_Layer: 0
   m_Name: coffee_table_4
   m_TagString: Untagged
@@ -3422,6 +3507,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877246272913
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877246272912}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 40, y: 40, z: 54.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &7484751877246310832
 Transform:
   m_ObjectHideFlags: 0
@@ -4083,6 +4181,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877305176809}
+  - component: {fileID: 7484751877304815306}
   m_Layer: 0
   m_Name: chair_4
   m_TagString: Untagged
@@ -4090,6 +4189,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877304815306
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877304815305}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.1, y: 1.1, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751877304815307
 GameObject:
   m_ObjectHideFlags: 0
@@ -4613,6 +4725,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877435386462}
+  - component: {fileID: 7484751877435750015}
   m_Layer: 0
   m_Name: kitchen_chair_2 (3)
   m_TagString: Untagged
@@ -4620,6 +4733,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877435750015
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877435750014}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &7484751877537038056
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -4812,6 +4938,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877540429516}
+  - component: {fileID: 7484751877540389613}
   m_Layer: 0
   m_Name: kitchen_shelf_2
   m_TagString: Untagged
@@ -4819,6 +4946,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877540389613
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877540389612}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751877540389614
 GameObject:
   m_ObjectHideFlags: 0
@@ -5015,6 +5155,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877541924100}
+  - component: {fileID: 7484751877542023461}
   m_Layer: 0
   m_Name: tv_table_2
   m_TagString: Untagged
@@ -5022,6 +5163,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877542023461
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877542023460}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.94, y: 0.35, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751877542023462
 GameObject:
   m_ObjectHideFlags: 0
@@ -5474,6 +5628,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877554155723}
+  - component: {fileID: 7484751877553925356}
   m_Layer: 0
   m_Name: kitchen_shelf_corner
   m_TagString: Untagged
@@ -5481,6 +5636,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877553925356
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877553925355}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.61, y: 3, z: 4.27}
+  m_Center: {x: -0.45, y: 0.71, z: 0}
 --- !u!1 &7484751877553925357
 GameObject:
   m_ObjectHideFlags: 0
@@ -6496,6 +6664,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877640331170}
+  - component: {fileID: 7484751877640749955}
   m_Layer: 0
   m_Name: sofa_2
   m_TagString: Untagged
@@ -6503,6 +6672,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877640749955
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877640749954}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.5, y: 1, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751877640749968
 GameObject:
   m_ObjectHideFlags: 0
@@ -6948,6 +7130,7 @@ GameObject:
   - component: {fileID: 7484751877679873721}
   - component: {fileID: 7484751877683265177}
   - component: {fileID: 7484751877682166873}
+  - component: {fileID: 7484751877679899290}
   m_Layer: 0
   m_Name: vase_5
   m_TagString: Untagged
@@ -6955,6 +7138,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877679899290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877679899289}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 9.735574, y: 20.675554, z: 9.735571}
+  m_Center: {x: -0.00006055832, y: 10.32828, z: -0.0001232624}
 --- !u!33 &7484751877680193145
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -7204,6 +7400,7 @@ GameObject:
   - component: {fileID: 7484751877702907017}
   - component: {fileID: 7484751877702104233}
   - component: {fileID: 7484751877701006953}
+  - component: {fileID: 7484751877703002282}
   m_Layer: 0
   m_Name: plate
   m_TagString: Untagged
@@ -7211,6 +7408,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877703002282
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877703002281}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 24.232925, y: 24.232931, z: 5.933241}
+  m_Center: {x: 0, y: 0, z: 0.0000014305117}
 --- !u!4 &7484751877710067960
 Transform:
   m_ObjectHideFlags: 0
@@ -7333,6 +7543,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877710067966}
+  - component: {fileID: 7484751877710488799}
   m_Layer: 0
   m_Name: torchere_3
   m_TagString: Untagged
@@ -7340,6 +7551,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877710488799
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877710488798}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.79, y: 0.42, z: 2}
+  m_Center: {x: -0.22, y: 0, z: 0.66}
 --- !u!33 &7484751877711395032
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -8336,6 +8560,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877735766987}
+  - component: {fileID: 7484751877736187884}
   m_Layer: 0
   m_Name: modular_kitchen_table_4
   m_TagString: Untagged
@@ -8343,6 +8568,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877736187884
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877736187883}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751877736187885
 GameObject:
   m_ObjectHideFlags: 0
@@ -9545,6 +9783,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877984259066}
+  - component: {fileID: 7484751877984688091}
   m_Layer: 0
   m_Name: kitchen_chair_2 (2)
   m_TagString: Untagged
@@ -9552,6 +9791,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877984688091
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877984688090}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751877984688092
 GameObject:
   m_ObjectHideFlags: 0
@@ -9597,6 +9849,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751877995593584}
+  - component: {fileID: 7484751877995422545}
   m_Layer: 0
   m_Name: kitchen_chair_2
   m_TagString: Untagged
@@ -9604,6 +9857,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751877995422545
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751877995422544}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751877995422546
 GameObject:
   m_ObjectHideFlags: 0
@@ -10477,6 +10743,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878039551267}
+  - component: {fileID: 7484751878039511300}
   m_Layer: 0
   m_Name: sofa_4
   m_TagString: Untagged
@@ -10484,6 +10751,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878039511300
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878039511299}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.8, y: 1, z: 1.6}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751878039511301
 GameObject:
   m_ObjectHideFlags: 0
@@ -11020,6 +11300,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878064242327}
+  - component: {fileID: 7484751878064136888}
   m_Layer: 0
   m_Name: kitchen_chair_2 (1)
   m_TagString: Untagged
@@ -11027,6 +11308,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878064136888
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878064136887}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.6, y: 0.5, z: 2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &7484751878064242321
 Transform:
   m_ObjectHideFlags: 0
@@ -11438,6 +11732,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878150652911}
+  - component: {fileID: 7484751878150692816}
   m_Layer: 0
   m_Name: vase_2
   m_TagString: Untagged
@@ -11445,6 +11740,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878150692816
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878150692815}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &7484751878151979981
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -12190,6 +12498,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878314748522}
+  - component: {fileID: 7484751878314849867}
   m_Layer: 0
   m_Name: cabinet_2
   m_TagString: Untagged
@@ -12197,6 +12506,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878314849867
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878314849866}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.3, y: 0.9, z: 4}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751878316258520
 GameObject:
   m_ObjectHideFlags: 0
@@ -12485,6 +12807,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878385344001}
+  - component: {fileID: 7484751878385762850}
   m_Layer: 0
   m_Name: modular_kitchen_table_2
   m_TagString: Untagged
@@ -12492,6 +12815,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878385762850
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878385762849}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751878385762851
 GameObject:
   m_ObjectHideFlags: 0
@@ -12946,7 +13282,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2, y: 2.3, z: 2}
-  m_Center: {x: 0, y: 0, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!4 &7484751878427681168
 Transform:
   m_ObjectHideFlags: 0
@@ -13774,6 +14110,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7484751878483871879}
+  - component: {fileID: 7484751878484366504}
   m_Layer: 0
   m_Name: modular_kitchen_table_3
   m_TagString: Untagged
@@ -13781,6 +14118,19 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!65 &7484751878484366504
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7484751878484366503}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751878484366509
 GameObject:
   m_ObjectHideFlags: 0
@@ -14226,8 +14576,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.6, y: 0.6, z: 2}
-  m_Center: {x: 0, y: 0, z: 1}
+  m_Size: {x: 0.6, y: 0.6, z: 3}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &7484751878626466693
 GameObject:
   m_ObjectHideFlags: 0
