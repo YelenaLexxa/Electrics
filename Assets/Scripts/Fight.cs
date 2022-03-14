@@ -17,6 +17,9 @@ namespace Electrics
         public Image Enemy_HB_1;
         public Image Enemy_HB_2;
 
+        public Image Target_Enemy_1;
+        public Image Target_Enemy_2;
+
         public Slider Enemy_Slider_1;
         public Slider Enemy_Slider_2;
 
@@ -44,6 +47,8 @@ namespace Electrics
         void Start()
         {
             PrepareEnemy();
+            Target_Enemy_1.enabled = false;
+            Target_Enemy_2.enabled = false;
         }
 
         // Update is called once per frame
@@ -53,14 +58,28 @@ namespace Electrics
             Enemy_Slider_1.value = health_Enemy_1;
             Enemy_Slider_2.value = health_Enemy_2;
 
-            if (health_Enemy_1 <= 0)
+            if (health_Enemy_1 <= 0 && health_Enemy_2 > 0)
             {
+                currentEnemyIndex = 2;
                 Enemy_1.interactable = false;
+                Target_Enemy_1.enabled = false;
+                Target_Enemy_2.enabled = true;
             }
 
-            if (health_Enemy_2 <= 0)
+            if (health_Enemy_2 <= 0 && health_Enemy_1 > 0)
             {
+                currentEnemyIndex = 1;
                 Enemy_2.interactable = false;
+                Target_Enemy_1.enabled = true;
+                Target_Enemy_2.enabled = false;
+            }
+
+            if (health_Enemy_2 <= 0 && health_Enemy_1 <= 0)
+            {
+                currentEnemyIndex = 0;
+                Enemy_2.interactable = false;
+                Target_Enemy_1.enabled = false;
+                Target_Enemy_2.enabled = false;
             }
 
         }
@@ -173,12 +192,16 @@ namespace Electrics
         {
             playerFight.current_Enemy = getEnemy_1;
             currentEnemyIndex = 1;
+            Target_Enemy_1.enabled = true;
+            Target_Enemy_2.enabled = false;
         }
 
         public void chooseEnemy_2()
         {
             playerFight.current_Enemy = getEnemy_2;
             currentEnemyIndex = 2;
+            Target_Enemy_1.enabled = false;
+            Target_Enemy_2.enabled = true;
         }
     }
 }

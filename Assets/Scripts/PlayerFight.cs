@@ -29,6 +29,9 @@ namespace Electrics
         public int changeIndex = 0;
         public int BotFightIndex;
 
+        public Image Target_Player_1;
+        public Image Target_Player_2;
+
         public GameObject CnahgePanel;
 
         public GameObject EarthBot_Actions_Panel;
@@ -48,6 +51,8 @@ namespace Electrics
         public Button GrassBotChoose;
         public Button PlasmaBotChoose;
         public Button WaterBotChoose;
+
+        public Button EndTurn_Button;
 
 
         public int Attack_Power_Bot_1 = 0;
@@ -87,6 +92,9 @@ namespace Electrics
             Win.SetActive(false);
             Draw.SetActive(false);
             Lose.SetActive(false);
+
+            Target_Player_1.enabled = false;
+            Target_Player_2.enabled = false;
         }
 
         public void SetUp()
@@ -108,20 +116,32 @@ namespace Electrics
 
             PrepareBots();
 
-            if (health_bot_1 <= 0)
+            if (health_bot_1 <= 0 && health_bot_2 <= 0)
             {
                 Bot_1.interactable = false;
-
-                //item.interactable = false;
-                //item.enabled = false; 
+                Bot_2.interactable = false;
+                BotFightIndex = 0;
+                changeIndex = 0;
+                Target_Player_1.enabled = false;
+                Target_Player_2.enabled = false;
             }
 
-            if (health_bot_2 <= 0)
+            if (health_bot_1 <= 0 && health_bot_2 > 0)
+            {
+                Bot_1.interactable = false;
+                BotFightIndex = 2;
+                changeIndex = 2;
+                Target_Player_1.enabled = false;
+                Target_Player_2.enabled = true;
+            }
+
+            if (health_bot_2 <= 0 && health_bot_1 > 0)
             {
                 Bot_2.interactable = false;
-
-                //item.interactable = false; 
-                //item.enabled = false; 
+                BotFightIndex = 1;
+                changeIndex = 1;
+                Target_Player_2.enabled = false;
+                Target_Player_1.enabled = true;
             }
 
             ChangeRobotButtons();
@@ -348,23 +368,30 @@ namespace Electrics
 
         public void ChangeBot()
         {
-            if (changeIndex == 1 || changeIndex == 2)
+            if (BotFightIndex != 0)
             {
-                CnahgePanel.SetActive(true);
+                if (changeIndex == 1 || changeIndex == 2)
+                {
+                    CnahgePanel.SetActive(true);
+                }
             }
-
         }
 
         public void change_Bot_1()
         {
             changeIndex = 1;
             BotFightIndex = 1;
+
+            Target_Player_1.enabled = true;
+            Target_Player_2.enabled = false;
         }
 
         public void change_Bot_2()
         {
             changeIndex = 2;
             BotFightIndex = 2;
+            Target_Player_1.enabled = false;
+            Target_Player_2.enabled = true;
         }
 
         public void chooseAttack()
@@ -426,6 +453,11 @@ namespace Electrics
             }
         }
 
+        public void EndTurn()
+        {
+            arena.Attack = true;
+        }
+
         //Attack FireBot
         public void Inferno_Ball() // bp8
         {
@@ -452,7 +484,7 @@ namespace Electrics
                 arena.ButtlePoints = arena.ButtlePoints - 8;//bp 8
 
                 FireBot_Actions_Panel.SetActive(false);
-                arena.Attack = true;
+                //arena.Attack = true;
             }
             
 
@@ -479,7 +511,7 @@ namespace Electrics
                 }
 
                 arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
-                arena.Attack = true;
+                //arena.Attack = true;
                 FireBot_Actions_Panel.SetActive(false);
             }
         }
@@ -527,7 +559,7 @@ namespace Electrics
                     health_bot_2 = HP_Bots[currentBot_2];
                 }
 
-                arena.Attack = true;
+                //arena.Attack = true;
                 FireBot_Actions_Panel.SetActive(false);
             }
         }
@@ -552,7 +584,7 @@ namespace Electrics
                     Attack_Power_Bot_2 = Random.Range(3, 4);
                 }
                 arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
-                arena.Attack = true;
+                //arena.Attack = true;
                 WaterBot_Actions_Panel.SetActive(false);
             }
         }
@@ -575,7 +607,7 @@ namespace Electrics
                     Attack_Power_Bot_2 = Random.Range(2, 3);
                 }
                 arena.ButtlePoints = arena.ButtlePoints - 3;//bp 3
-                arena.Attack = true;
+                //arena.Attack = true;
                 WaterBot_Actions_Panel.SetActive(false);
             }
 
@@ -603,7 +635,7 @@ namespace Electrics
                     Attack_Power_Bot_2 = Random.Range(2, 3) * (Dodge / 100) + Random.Range(2, 3);
                 }
 
-                arena.Attack = true;
+                //arena.Attack = true;
                 WaterBot_Actions_Panel.SetActive(false);
             }
             
@@ -631,7 +663,7 @@ namespace Electrics
                 }
 
                 arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
-                arena.Attack = true;
+                //arena.Attack = true;
                 GrassBot_Actions_Panel.SetActive(false);
             }
         }
@@ -653,7 +685,7 @@ namespace Electrics
                     Attack_Power_Bot_2 = Random.Range(2, 3);
                 }
                 arena.ButtlePoints = arena.ButtlePoints - 3;//bp 3
-                arena.Attack = true;
+                //arena.Attack = true;
                 GrassBot_Actions_Panel.SetActive(false);
             }
         }
@@ -681,7 +713,7 @@ namespace Electrics
                 }
 
 
-                arena.Attack = true;
+                //arena.Attack = true;
                 GrassBot_Actions_Panel.SetActive(false);
             }
         }
@@ -707,7 +739,7 @@ namespace Electrics
 
 
                 arena.ButtlePoints = arena.ButtlePoints - 10;//bp 10
-                arena.Attack = true;
+                //arena.Attack = true;
                 EarthBot_Actions_Panel.SetActive(false);
             }
             
@@ -731,7 +763,7 @@ namespace Electrics
                 }
 
                 arena.ButtlePoints = arena.ButtlePoints - 2;//bp 2
-                arena.Attack = true;
+                //arena.Attack = true;
                 EarthBot_Actions_Panel.SetActive(false);
             }
         }
@@ -757,7 +789,7 @@ namespace Electrics
                 }
 
 
-                arena.Attack = true;
+                //arena.Attack = true;
                 EarthBot_Actions_Panel.SetActive(false);
             }
         }
@@ -783,7 +815,7 @@ namespace Electrics
                 }
 
                 arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
-                arena.Attack = true;
+                //arena.Attack = true;
                 PlasmaBot_Actions_Panel.SetActive(false);
             }
             
@@ -809,7 +841,7 @@ namespace Electrics
 
                 arena.ButtlePoints = arena.ButtlePoints - 3;//bp 3
                 //int Heals_Sucker_Punch = Random.Range(1, 2);
-                arena.Attack = true;
+                //arena.Attack = true;
                 PlasmaBot_Actions_Panel.SetActive(false);
             }
             
@@ -851,7 +883,7 @@ namespace Electrics
                     health_bot_2 = HP_Bots[currentBot_2];
                 }
 
-                arena.Attack = true;
+                //arena.Attack = true;
                 PlasmaBot_Actions_Panel.SetActive(false);
             }
         }
@@ -865,7 +897,7 @@ namespace Electrics
                 NO_BP_Image.SetActive(true);
             }
             else {
-                arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
+                
 
                 int Heal = Random.Range(1, 6);
 
@@ -873,12 +905,14 @@ namespace Electrics
                 {
                     health_bot_1 = health_bot_1 + Heal;
                     Current_HP_Bots[currentBot_2] = health_bot_2;
+                    arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
                 }
 
                 if (BotFightIndex == 2)
                 {
                     health_bot_2 = health_bot_2 + Heal;
                     Current_HP_Bots[currentBot_2] = health_bot_2;
+                    arena.ButtlePoints = arena.ButtlePoints - 5;//bp 5
                 }
 
                 if (health_bot_1 > HP_Bots[currentBot_1])
@@ -901,11 +935,15 @@ namespace Electrics
                 NO_BP_Image.SetActive(true);
             }
             else {
-                arena.ButtlePoints = arena.ButtlePoints - 4;//bp 4
+                if (BotFightIndex != 0)
+                {
+                    arena.ButtlePoints = arena.ButtlePoints - 4;//bp 4
 
-                int TaserPower = Random.Range(2, 3);
+                    int TaserPower = Random.Range(2, 3);
 
-                AdditionalAttack = AdditionalAttack + TaserPower;
+                    AdditionalAttack = AdditionalAttack + TaserPower;
+                }
+                
 
                 //if (BotFightIndex == 1)
                 //{
@@ -929,7 +967,7 @@ namespace Electrics
                 NO_BP_Image.SetActive(true);
             }
             else {
-                arena.ButtlePoints = arena.ButtlePoints - 4;//bp 4
+                
 
                 int HardCasingPower = Random.Range(1, 6);
 
@@ -937,12 +975,14 @@ namespace Electrics
                 {
                     health_bot_1 = health_bot_1 + HardCasingPower;
                     Current_HP_Bots[currentBot_1] = health_bot_1;
+                    arena.ButtlePoints = arena.ButtlePoints - 4;//bp 4
                 }
 
                 if (BotFightIndex == 2)
                 {
                     health_bot_2 = health_bot_2 + HardCasingPower;
                     Current_HP_Bots[currentBot_2] = health_bot_2;
+                    arena.ButtlePoints = arena.ButtlePoints - 4;//bp 4
                 }
 
                 if (health_bot_1 > HP_Bots[currentBot_1])
@@ -964,11 +1004,15 @@ namespace Electrics
                 NO_BP_Image.SetActive(true);
             }
             else {
-                arena.ButtlePoints = arena.ButtlePoints - 4;//bp 4
+                if (BotFightIndex != 0)
+                {
+                    arena.ButtlePoints = arena.ButtlePoints - 4;//bp 4
 
-                int ExcaliburPower = Random.Range(1, 4);
+                    int ExcaliburPower = Random.Range(1, 4);
 
-                AdditionalAttack = AdditionalAttack + ExcaliburPower;
+                    AdditionalAttack = AdditionalAttack + ExcaliburPower;
+                }
+                
 
                 //if (BotFightIndex == 1)
                 //{
@@ -993,7 +1037,7 @@ namespace Electrics
                 NO_BP_Image.SetActive(true);
             }
             else {
-                arena.ButtlePoints = arena.ButtlePoints - 8;//bp 8
+                
 
                 int UpgradeHeal = Random.Range(3, 5);
                 int UpgradePower = Random.Range(3, 5);
@@ -1004,6 +1048,7 @@ namespace Electrics
                 {
                     health_bot_1 = health_bot_1 + UpgradeHeal;
                     Current_HP_Bots[currentBot_1] = health_bot_1;
+                    arena.ButtlePoints = arena.ButtlePoints - 8;//bp 8
                     // Attack_Power_Bot_1 = Attack_Power_Bot_1 + UpgradePower;
                 }
 
@@ -1011,6 +1056,7 @@ namespace Electrics
                 {
                     health_bot_2 = health_bot_2 + UpgradeHeal;
                     Current_HP_Bots[currentBot_2] = health_bot_2;
+                    arena.ButtlePoints = arena.ButtlePoints - 8;//bp 8
                     //Attack_Power_Bot_2 = Attack_Power_Bot_2 + UpgradePower;
                 }
 
@@ -1152,7 +1198,7 @@ namespace Electrics
             Item_Menu_2.SetActive(false);
             Item_Menu_3.SetActive(false);
 
-        fight.Attack_Power_Enemy_1 = 0;
+            fight.Attack_Power_Enemy_1 = 0;
             fight.Attack_Power_Enemy_2 = 0;
 
             fight.Total_Attack_Power_Enemy_1 = 0;
@@ -1165,6 +1211,8 @@ namespace Electrics
             fight.Enemy_2.interactable = true;
 
             fight.PrepareEnemy();
+
+            fight.chooseEnemy_1();
 
             if (arena.ButtlePoints < 7)
             {
