@@ -100,7 +100,7 @@ namespace Electrics
                 }
             }
             playerFight.Round_Int = playerFight.Round_Int + 1; 
-            ButtlePoints = ButtlePoints + 7;
+            ButtlePoints = ButtlePoints + 4;
             playerFight.AdditionalAttack = 0;
         }
     }
