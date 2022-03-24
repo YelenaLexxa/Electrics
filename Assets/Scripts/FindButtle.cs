@@ -16,7 +16,6 @@ namespace Electrics
 
         public GameObject MainPanel;
         public GameObject FightManager;
-        public GameObject Timer;
         private bool _Arena;
         private bool _Arena_2;
         private bool _Arena_3;
@@ -29,7 +28,6 @@ namespace Electrics
         void Start()
         {
             MainPanel.SetActive(false);
-            Timer.SetActive(true);
         }
 
         // Update is called once per frame
@@ -44,7 +42,6 @@ namespace Electrics
             {
                 MainPanel.SetActive(true);
                 FightManager.SetActive(true);
-                Timer.SetActive(false);
                 audio_Manager.Stop();
 
                 if (!_Arena)
@@ -58,7 +55,6 @@ namespace Electrics
             {
                 MainPanel.SetActive(true);
                 FightManager.SetActive(true);
-                Timer.SetActive(false);
                 audio_Manager.Stop();
                 if (!_Arena_2)
                 {
@@ -71,7 +67,6 @@ namespace Electrics
             {
                 MainPanel.SetActive(true);
                 FightManager.SetActive(true);
-                Timer.SetActive(false);
                 audio_Manager.Stop();
                 if (!_Arena_3)
                 {
@@ -84,7 +79,6 @@ namespace Electrics
             {
                 MainPanel.SetActive(true);
                 FightManager.SetActive(true);
-                Timer.SetActive(false);
                 audio_Manager.Stop();
                 if (!_Arena_4)
                 {
@@ -97,7 +91,6 @@ namespace Electrics
             {
                 MainPanel.SetActive(true);
                 FightManager.SetActive(true);
-                Timer.SetActive(false);
                 audio_Manager.Stop();
                 if (!_Arena_5)
                 {
@@ -110,7 +103,6 @@ namespace Electrics
             {
                 MainPanel.SetActive(true);
                 FightManager.SetActive(true);
-                Timer.SetActive(false);
                 audio_Manager.Stop();
                 if (!_Arena_6)
                 {
@@ -124,7 +116,6 @@ namespace Electrics
             {
                 MainPanel.SetActive(true);
                 FightManager.SetActive(true);
-                Timer.SetActive(false);
                 audio_Manager.Stop();
                 if (!_Arena_7)
                 {
@@ -146,7 +137,6 @@ namespace Electrics
             //FightManager.SetActive(false);
 
             playerFight.RefreshButtle();
-            Timer.SetActive(true);
             playerFight._winRound = false;
             audio_Manager.Play();
         }
