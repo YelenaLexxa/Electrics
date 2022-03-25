@@ -10,7 +10,7 @@ namespace Electrics
 
         [SerializeField] private PlayerFight playerFight;
         [SerializeField] private Arena arena;
-        [SerializeField] private Timer_Script timer_Script;
+        //[SerializeField] private Timer_Script timer_Script;
         [SerializeField] private Audio_Manager audio_Manager;
         
 
@@ -47,7 +47,6 @@ namespace Electrics
                 if (!_Arena)
                 {
                     _Arena = true;
-                    timer_Script.Arena_Score = timer_Script.Arena_Score + 1;
                 }
             }
 
@@ -59,7 +58,6 @@ namespace Electrics
                 if (!_Arena_2)
                 {
                     _Arena_2 = true;
-                    timer_Script.Arena_Score = timer_Script.Arena_Score + 1;
                 }
             }
 
@@ -71,7 +69,6 @@ namespace Electrics
                 if (!_Arena_3)
                 {
                     _Arena_3 = true;
-                    timer_Script.Arena_Score = timer_Script.Arena_Score + 1;
                 }
             }
 
@@ -83,7 +80,6 @@ namespace Electrics
                 if (!_Arena_4)
                 {
                     _Arena_4 = true;
-                    timer_Script.Arena_Score = timer_Script.Arena_Score + 1;
                 }
             }
 
@@ -95,7 +91,6 @@ namespace Electrics
                 if (!_Arena_5)
                 {
                     _Arena_5 = true;
-                    timer_Script.Arena_Score = timer_Script.Arena_Score + 1;
                 }
             }
 
@@ -107,7 +102,6 @@ namespace Electrics
                 if (!_Arena_6)
                 {
                     _Arena_6 = true;
-                    timer_Script.Arena_Score = timer_Script.Arena_Score + 1;
                 }
             }
 
@@ -120,7 +114,6 @@ namespace Electrics
                 if (!_Arena_7)
                 {
                     _Arena_7 = true;
-                    timer_Script.Arena_Score = timer_Script.Arena_Score + 1;
                 }
             }
         }
@@ -130,7 +123,6 @@ namespace Electrics
             if (playerFight._winRound == true)
             {
                 arena.ButtlePoints = arena.ButtlePoints + 2;
-                timer_Script.Electric_Score = timer_Script.Electric_Score + 5;
                
             }
             MainPanel.SetActive(false);
